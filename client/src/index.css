@@ -1,0 +1,16 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Prevents scrollbars */
+}
+
+/* FORCE THE MAP TO HAVE HEIGHT */
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
