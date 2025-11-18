@@ -8,9 +8,8 @@ body {
 .leaflet-container {
   width: 100vw;
   height: 100vh;
-  /* Forces Full Screen */
   background: #111827;
-  /* Dark background */
+  z-index: 1;
 }
 
 /* Optional: Make popups look cool and dark */
