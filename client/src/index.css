@@ -1,16 +1,26 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
+/* client/src/index.css */
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* Prevents scrollbars */
 }
 
-/* FORCE THE MAP TO HAVE HEIGHT */
 .leaflet-container {
   width: 100vw;
   height: 100vh;
+  /* Forces Full Screen */
+  background: #111827;
+  /* Dark background */
+}
+
+/* Optional: Make popups look cool and dark */
+.leaflet-popup-content-wrapper {
+  background: rgba(0, 0, 0, 0.9);
+  color: #4ade80;
+  /* Matrix Green text */
+  border: 1px solid #4ade80;
+}
+
+.leaflet-popup-tip {
+  background: rgba(0, 0, 0, 0.9);
 }

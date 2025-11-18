@@ -79,6 +79,12 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('❌ Client Disconnected:', socket.id);
     });
+
+    socket.on('mission_complete', (data) => {
+        console.log('✅ Mission Complete at:', data);
+        // Tell React to turn that specific circle GREEN
+        io.emit('disaster_resolved', data);
+    });
 });
 
 // --- 5. START SERVER ---
